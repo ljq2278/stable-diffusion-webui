@@ -4,6 +4,8 @@ import os
 os.environ["http_proxy"]="http://127.0.0.1:10809"
 os.environ["https_proxy"]="http://127.0.0.1:10809"
 os.environ["no_proxy"]="127.0.0.1,localhost,127.0.0.1:8860"
+os.environ["MODELSCOPE_CACHE"]=" /mount_nas/newsugg/wrkspace/ljq/modelscope_cache"
+os.environ["HF_HOME"]="/mount_nas/newsugg/wrkspace/ljq/huggingface_cache"
 import time
 
 from modules import timer

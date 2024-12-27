@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import os
+os.environ["http_proxy"]="http://127.0.0.1:10809"
+os.environ["https_proxy"]="http://127.0.0.1:10809"
+os.environ["no_proxy"]="127.0.0.1,localhost,127.0.0.1:8860"
 import time
 
 from modules import timer
